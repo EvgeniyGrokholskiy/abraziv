@@ -6,8 +6,8 @@
                 <p class="footer__company_name">Общество с ограниченной ответственностью<br>«МК АБРАЗИВ»</p>
                 <nav>
                     <ul class="footer__nav_menu footer__nav_menu-left">
-                        <li class="footer__item"><a class="footer__link" href="#">Главная</a></li>
-                        <li class="footer__item"><a class="footer__link" href="#">О компании</a></li>
+                        <li class="footer__item"><a class="footer__link" href="index.html">Главная</a></li>
+                        <li class="footer__item"><a class="footer__link" href="about.html">О компании</a></li>
                     </ul>
                 </nav>
             </div>

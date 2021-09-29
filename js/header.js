@@ -47,8 +47,8 @@
         </div>
         <nav class="header__nav_wrapper">
             <ul class="header__nav">
-                <li class="header__list_item"><a href="#" class="header__link">Главная</a></li>
-                <li class="header__list_item"><a href="#" class="header__link">О компании</a></li>
+                <li class="header__list_item"><a href="index.html" class="header__link">Главная</a></li>
+                <li class="header__list_item"><a href="about.html" class="header__link">О компании</a></li>
                 <li class="header__list_item"><a href="#" class="header__link">Продукция</a></li>
                 <li class="header__list_item"><a href="#" class="header__link">Доставка</a></li>
                 <li class="header__list_item"><a href="#" class="header__link">Контакты</a></li>
