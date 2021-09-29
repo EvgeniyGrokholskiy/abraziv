@@ -1,0 +1,6 @@
+@mixin fonts($size: 20px,$weight: 400, $ls: -1px) {
+  font-family: Roboto, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  letter-spacing: $ls;
+}

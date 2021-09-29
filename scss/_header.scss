@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3% 0 5%;
+  height: 135px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 1%;
+
+}
+
+.logo__text {
+  @include fonts(40px, 700, 0);
+}
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.contacts__address-svg {
+  position: relative;
+  top: 2px;
+}
+
+.contact__mail_address {
+  @include fonts(21px);
+}
+
+.contact__email {
+  @extend .contact__mail_address;
+}
+
+.contact__link {
+  color:$black_text;
+  text-decoration: none;
+}
+.contact__link:hover {
+  text-decoration: underline;
+}
+
+.contact__email-svg {
+  @extend .contacts__address-svg;
+}
+
+.contact__phone {
+  @extend .logo;
+  padding: 0;
+  width: 22em;
+}
+
+.contact__phone_number {
+  @include fonts(28px, 700, 0);
+  margin-left: 4%;
+}
+
+.header__nav_wrapper {
+  background-color: $nav_background;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 43px;
+  width: 840px;
+}
+
+.header__list_item {
+  list-style: none;
+}
+
+.header__link:hover {
+  color: red;
+}
+
+.header__link {
+  @include fonts(24px);
+  color: $white_text;
+  text-decoration: none;
+}
+
+.header__image {
+  max-width: 1440px;
+  width: 100%;
+}

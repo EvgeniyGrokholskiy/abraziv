@@ -1,0 +1,15 @@
+.partners {
+
+}
+
+.partners__text {
+  @include fonts(28px,400,0);
+  margin: 0 0 2% 0;
+  text-align: center;
+}
+
+.partners__list {
+  background: blue;
+  height: 50px;
+  margin-bottom: 2%;
+}

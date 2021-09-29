@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="80px" height="80px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 80 80"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#FEFEFE;stroke-width:4.17;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil4 {fill:none}
+    .fil3 {fill:#FEFEFE}
+    .fil1 {fill:#E7E5E5}
+    .fil0 {fill:#00A890}
+    .fil2 {fill:#148778}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2476803099760">
+   <path class="fil0" d="M73.82 40.03c0,18.66 -15.09,33.79 -33.69,33.79 -18.61,0 -33.7,-15.13 -33.7,-33.79 0,-18.66 15.09,-33.78 33.7,-33.78 18.6,0 33.69,15.12 33.69,33.78z"/>
+   <path class="fil1" d="M9.89 55.38c-2.37,-4.62 -3.71,-9.86 -3.71,-15.41 0,-18.66 15.09,-33.79 33.7,-33.79 2.9,0 5.72,0.37 8.42,1.07 -2.62,-0.66 -5.36,-1 -8.17,-1 -18.61,0 -33.7,15.12 -33.7,33.78 0,5.37 1.25,10.45 3.48,14.96 -0.02,0.24 -0.02,0.38 -0.02,0.39z"/>
+   <path class="fil2" d="M9.91 54.99c-2.23,-4.51 -3.48,-9.59 -3.48,-14.96 0,-18.66 15.09,-33.78 33.7,-33.78 2.81,0 5.55,0.34 8.17,1 4.17,1.07 8.03,2.93 11.41,5.4 -1.1,-0.05 -2.18,-0.07 -3.23,-0.07 -42.7,0 -46.3,38.13 -46.57,42.41z"/>
+   <path class="fil3" d="M40.12 21.75c5.92,0 10.7,4.79 10.7,10.7 0,4.77 -3.73,8.43 -6.11,12.27 -1.82,2.91 -3.57,6.32 -4.59,10.5 -1.05,-4.34 -2.9,-7.85 -4.79,-10.85 -2.36,-3.73 -5.9,-7.25 -5.9,-11.92 0,-5.91 4.78,-10.7 10.69,-10.7zm0 5.73c2.71,0 4.9,2.19 4.9,4.89 0,2.7 -2.19,4.89 -4.9,4.89 -2.7,0 -4.89,-2.19 -4.89,-4.89 0,-2.7 2.19,-4.89 4.89,-4.89z"/>
+   <polyline class="fil4 str0" points="20.61,61.49 32.41,61.85 47.42,55.06 57.97,61.85 "/>
+  </g>
+ </g>
+</svg>

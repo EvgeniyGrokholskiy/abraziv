@@ -1,0 +1,102 @@
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: $footer_background;
+  height: 200px;
+  margin-top: 5%;
+}
+
+.footer__left {
+  margin-left: 7%;
+}
+
+.footer__company_name {
+  color: $white_text;
+  font-size: 21px;
+  line-height: 1.5;
+  width: 20em;
+  margin-left: 4%;
+  margin-bottom: 7%;
+}
+
+.footer__nav_menu {
+  padding: 0;
+}
+
+.footer__nav_menu-left {
+  margin-left: 6%;
+  line-height: 1.4;
+}
+
+.footer__item {
+  list-style: none;
+}
+
+.footer__link {
+  @include fonts(20px, 400, 0);
+  color: $white_text;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__nav_menu-center {
+  margin-top: 10%;
+  line-height: 1.4;
+}
+
+.footer__right {
+  margin-right: 10%;
+}
+
+.footer__contact_data {
+  margin-left: 5%;
+  width: 15em;
+}
+
+.footer__address, .footer__contact {
+  @include fonts(20px,400,0);
+  color: $white_text;
+  //margin: 0;
+}
+
+.footer__contact {
+  margin: 12% 0 0 0;
+}
+
+.footer__address {
+  position: relative;
+  margin: 2% 0 1% 0;
+  line-height: 1.4;
+}
+
+.sign {
+  position: absolute;
+  top: 3%;
+  left: -10%;
+}
+
+.footer__email {
+  position: relative;
+  margin: 0 0 1% 0;
+}
+
+.mail-sign {
+  position: absolute;
+  top: 26%;
+  left: -11%;
+}
+
+.footer__phone {
+  position: relative;
+  margin: 0 0 0 0;
+}
+
+.phone-sign {
+  position: absolute;
+  top: 3%;
+  left: -10%;
+}

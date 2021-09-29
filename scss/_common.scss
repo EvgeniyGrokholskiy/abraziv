@@ -1,0 +1,15 @@
+@import "fonts";
+@import "variables";
+@import "header.scss";
+@import "partners";
+@import "footer";
+
+body {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}

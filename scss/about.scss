@@ -1,0 +1,114 @@
+@import "common";
+
+
+
+
+.main__container {
+
+}
+
+.main__header {
+  @include fonts(29px);
+  color: $main_text;
+  margin-top: 4%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.main__text {
+  @include fonts(22px);
+  color: $main_text;
+  margin: 0 0 0 11%;
+}
+
+.spacer {
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.main__ul {
+  padding: 0;
+  margin-bottom: 2%;
+}
+
+.main__list_item {
+  @extend .main__text;
+  list-style: none;
+  line-height: 1.4;
+}
+
+.main__svg {
+  position: relative;
+  left: 50%;
+  margin: 5% 0 2% 0;
+  transform: translateX(-50%);
+}
+
+.main__storage {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 8% 0;
+}
+
+//.partners {
+//
+//}
+//
+//.partners__text {
+//  @include fonts(23px);
+//  margin: 0 0 2% 0;
+//  text-align: center;
+//}
+//
+//.partners__list {
+//  background: blue;
+//  height: 50px;
+//  margin-bottom: 2%;
+//}
+
+.price_download {
+  background-color: #e8e4e3;
+  height: 140px;
+  margin-bottom: 3%;
+}
+
+.price_downloads__color_line {
+  position: relative;
+  top: -5px;
+}
+
+.price_download__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140px;
+}
+
+.price_downloads__text {
+  @include fonts(29px);
+  color: $main_text;
+  margin-right: 3%;
+}
+
+.price_download__button {
+  @include fonts(23px, 600, 0);
+  background: rgb(214, 117, 20);
+  background: linear-gradient(180deg, rgba(214, 117, 20, 1) 50%, rgba(178, 58, 44, 1) 100%);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 8px 12px grey;
+  color: $white_text;
+  cursor: pointer;
+  height: 43%;
+  width: 24%;
+}
+
+.price_download__button:hover {
+  transform: scale(1.02);
+  box-shadow: 3px 8px 8px grey;
+}
+
+.price_download__button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 3px 3px grey;
+}
