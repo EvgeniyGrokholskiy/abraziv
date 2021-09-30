@@ -5,9 +5,12 @@
   position: relative;
 }
 
-.slider img {
+.slider__img {
   display: block;
   border: 0;
+  filter: saturate(1.2);
+  height: auto;
+  width: 100%;
 }
 
 .slider__text {
@@ -15,9 +18,19 @@
   color: $white_text;
   position: absolute;
   left: 50%;
-  bottom: 6%;
+  bottom: 5%;
+  text-shadow: 4px 4px 4px gray;
   transform: translateX(-50%);
   width: 24em;
+}
+
+@media screen and (max-width: 800px){
+  .slider__text {
+    bottom: -3%;
+    font-size: 3.7vw;
+    text-align: center;
+    width: 25em;
+  }
 }
 
 .price_download {
@@ -26,19 +39,19 @@
   margin-bottom: 3%;
 }
 
-.price_downloads__color_line {
+.price_download__color_line {
   position: relative;
-  top: -5px;
+  top: -9px;
+  width: 100%;
 }
 
 .price_download__container {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  height: 140px;
 }
 
-.price_downloads__text {
+.price_download__text {
   @include fonts(29px);
   color: $main_text;
   margin-right: 3%;
@@ -53,8 +66,9 @@
   box-shadow: 1px 8px 12px grey;
   color: $white_text;
   cursor: pointer;
-  height: 43%;
-  width: 24%;
+  transition: all ease-in 0.1s;
+  height: 60px;
+  width: 305px;
 }
 
 .price_download__button:hover {
@@ -65,6 +79,38 @@
 .price_download__button:active {
   transform: scale(0.98);
   box-shadow: 3px 3px 3px grey;
+}
+
+@media screen and(max-width: 1050px) {
+  .price_download {
+    background-color: #e8e4e3;
+    height: auto;
+    padding: 0 0 5% 0;
+    margin-bottom: 3%;
+  }
+
+  .price_download__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .price_download__text {
+    margin: 3% 0 3% 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .price_download__text {
+    font-size: 4vw;
+  }
+
+  .price_download__button {
+    font-size: 3.5vw;
+    padding: 3%;
+    height: unset;
+    width: unset;
+  }
 }
 
 .text_block {
@@ -110,11 +156,16 @@
   position: relative;
   box-shadow: 4px 4px 6px gray ;
   margin: 7px;
+  transition: all ease-in 0.1s;
 }
 
 .nav_links__button:hover {
   transform: scale(1.01);
   box-shadow: 6px 6px 8px gray;
+}
+
+.nav_links__button__img {
+  filter: saturate(1.2);
 }
 
 .nav_links__item {
@@ -128,6 +179,7 @@
   left: 0;
   text-decoration: none;
   text-shadow: 1px 1px 5px black;
+  transition: all ease-in 0.1s;
 }
 
 .nav_links__item:hover {
@@ -184,7 +236,7 @@
 }
 
 .banner {
-  background-color: #ddf0ee;
+  background: url("../img/homepage/logo_on_green.jpg") no-repeat left ;
   display: flex;
   justify-content: flex-end;
   position: relative;
@@ -212,7 +264,7 @@
   top: 53%;
   left: 50%;
   transform: translateX(-50%);
-  width: 58%;
+  width: 62%;
   z-index: -1;
 }
 
@@ -255,5 +307,5 @@
 
 .steps__svg {
   background-color: white;
-  fill: #00A890FF;
+  //fill: #00A890FF;
 }
