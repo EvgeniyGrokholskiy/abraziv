@@ -297,9 +297,9 @@
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #393031;
-  height: 200px;
   margin-top: 5%;
 }
 
@@ -352,7 +352,7 @@
 }
 
 .footer__contact_data {
-  margin-left: 5%;
+  margin-left: 15%;
   width: 15em;
 }
 
@@ -402,6 +402,42 @@
   left: -10%;
 }
 
+@media screen and (max-width: 1112px) {
+  .footer {
+    justify-content: center;
+    padding: 0 5% 5% 5%;
+  }
+
+  .footer__left {
+    margin: 0;
+  }
+
+  .footer__company_name {
+    width: 12em;
+  }
+
+  .footer__center {
+    margin-left: 10%;
+  }
+
+  .footer__right {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 565px) {
+  .footer__center {
+    margin-right: 6%;
+  }
+
+  .footer__right {
+    margin-left: 0;
+  }
+
+  .footer__item {
+    margin-top: 5%;
+  }
+}
 body {
   box-sizing: border-box;
 }
