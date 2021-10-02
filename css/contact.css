@@ -523,106 +523,74 @@ body {
   width: 100%;
 }
 
-.main__header {
-  font-family: Roboto, sans-serif;
-  font-size: 29px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  color: #3b6a60;
-  margin-top: 4%;
-  margin-bottom: 3%;
-  text-align: center;
+.header__image {
+  height: auto;
+  width: 100%;
 }
 
-.main__text, .main__list_item {
-  font-family: Roboto, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  color: #3b6a60;
-  margin: 0 0 0 11%;
+.contact_data {
+  margin: 5% auto;
+  width: 42em;
 }
 
-.spacer {
-  margin-top: 4%;
-  margin-bottom: 2%;
-}
-
-.main__ul {
-  padding: 0;
-  margin-bottom: 2%;
-}
-
-.main__list_item {
-  list-style: none;
-  line-height: 1.4;
-}
-
-.main__svg {
-  position: relative;
-  left: 50%;
-  margin: 5% 0 2% 0;
-  transform: translateX(-50%);
-}
-
-.main__storage {
-  text-align: center;
-  font-size: 30px;
-  margin: 0 0 8% 0;
-}
-
-.price_download {
-  background-color: #e8e4e3;
-  height: 140px;
-  margin-bottom: 3%;
-}
-
-.price_downloads__color_line {
-  position: relative;
-  top: -5px;
-}
-
-.price_download__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 140px;
-}
-
-.price_downloads__text {
-  font-family: Roboto, sans-serif;
-  font-size: 29px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  color: #3b6a60;
-  margin-right: 3%;
-}
-
-.price_download__button {
+.contact_data__text, .contact_data__link {
   font-family: Roboto, sans-serif;
   font-size: 23px;
-  font-weight: 600;
-  letter-spacing: 0;
-  background: #d67514;
-  background: linear-gradient(180deg, #d67514 50%, #b23a2c 100%);
-  border: none;
-  border-radius: 20px;
-  box-shadow: 1px 8px 12px grey;
-  color: white;
-  cursor: pointer;
-  height: 43%;
-  width: 24%;
-  transition: all ease-in 0.1s;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin: 0;
 }
 
-.price_download__button:hover {
-  transform: scale(1.02);
-  box-shadow: 3px 8px 8px grey;
+.contact_data__link {
+  color: black;
+  text-decoration: none;
 }
 
-.price_download__button:active {
-  transform: scale(0.98);
-  box-shadow: 3px 3px 3px grey;
+.contact_data__link:hover {
+  text-decoration: underline;
 }
 
-/*# sourceMappingURL=about.css.map */
+.map {
+  text-align: center;
+  margin-bottom: 14%;
+}
+
+.map__img {
+  height: auto;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact_data {
+    font-size: 1.6vw;
+  }
+
+  .contact_data__text, .contact_data__link {
+    font-size: 2.24vw;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contact_data {
+    font-size: 12px;
+  }
+
+  .contact_data__text, .contact_data__link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .contact_data {
+    padding: 2%;
+    width: 100%;
+  }
+
+  .contact_data__text, .contact_data__link {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

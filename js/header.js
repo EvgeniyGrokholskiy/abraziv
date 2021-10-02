@@ -46,10 +46,10 @@
             <ul class="header__nav-mobile">
                 <svg class="header__nav-arrow" xmlns="http://www.w3.org/2000/svg" version="1.0" width="30" height="30" viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" fill="black" style="">
 
-<g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)" fill="" stroke="">
-<path d="M275 670 l-39 -40 114 -115 115 -115 -115 -115 -115 -115 43 -42 42 -43 157 158 158 157 -155 155 c-85 85 -157 155 -160 155 -3 0 -24 -18 -45 -40z"/>
-</g>
-</svg>
+                <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)" fill="" stroke="">
+                <path d="M275 670 l-39 -40 114 -115 115 -115 -115 -115 -115 -115 43 -42 42 -43 157 158 158 157 -155 155 c-85 85 -157 155 -160 155 -3 0 -24 -18 -45 -40z"/>
+                </g>
+                </svg>
 <!--                <img src="./img/header/arrow_right.jpg" alt="" class="header__nav-arrow" width="30" height="30">-->
                 <li class="header__list_item"><a href="index.html" class="header__link">Главная</a></li>
                 <li class="header__list_item"><a href="about.html" class="header__link">О компании</a></li>
@@ -69,20 +69,3 @@
 })();
 window.scroll(top);
 
-document.querySelector('.header__nav-arrow').addEventListener('click', ()=> {
-    const liArray = document.querySelectorAll('.header__list_item');
-    const navMobile = document.querySelector('.header__nav-mobile');
-    const navArrow = document.querySelector('.header__nav-arrow');
-    navArrow.classList.toggle('header__nav-arrow-open');
-    navMobile.classList.toggle('show');
-    if (navMobile.classList.contains('show')){
-        liArray.forEach((element) => {
-            element.classList.add('on');
-        })
-    }else {
-        liArray.forEach(((element) => {
-            element.classList.remove('on');
-        }))
-    }
-
-})

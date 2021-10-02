@@ -1,0 +1,77 @@
+@import "common";
+
+
+.header__media {
+
+}
+
+.header__image {
+  height: auto;
+  width: 100%;
+}
+
+.contact_data {
+  margin: 5% auto;
+  width: 42em;
+}
+
+.contact_data__text {
+  @include fonts(23px);
+  margin: 0;
+}
+
+.contact_data__link {
+  @extend .contact_data__text;
+  color: black;
+  text-decoration: none;
+}
+
+.contact_data__link:hover {
+  text-decoration: underline;
+}
+
+.map {
+  text-align: center;
+  margin-bottom: 14%;
+
+}
+
+.map__img {
+  height: auto;
+  width: 100%;
+}
+
+.footer {
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact_data {
+    font-size: 1.6vw;
+  }
+
+  .contact_data__text {
+    font-size: 2.24vw;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .contact_data {
+    font-size: 12px;
+  }
+
+  .contact_data__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .contact_data {
+    padding: 2%;
+    width: 100%;
+  }
+
+  .contact_data__text {
+    font-size: 14px;
+  }
+}
