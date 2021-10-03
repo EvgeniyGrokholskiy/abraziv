@@ -122,11 +122,46 @@
   text-decoration: none;
 }
 
+.header__media {
+  position: relative;
+}
+
+.header__text {
+  font-family: Roboto, sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  letter-spacing: 0;
+  position: absolute;
+  left: 20%;
+  bottom: 31%;
+}
+
 .header__image {
-  max-width: 1440px;
+  display: block;
+  height: auto;
   width: 100%;
 }
 
+@media screen and (max-width: 855px) {
+  .header__media {
+    position: relative;
+    top: -5px;
+    background: url("../img/contacts/header_img_mobile.jpg") no-repeat center;
+    background-size: contain;
+    font-size: 5.1vw;
+    height: 6.91em;
+    z-index: -1;
+  }
+
+  .header__image {
+    display: none;
+  }
+
+  .header__text {
+    color: white;
+    bottom: 15%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .logo__svg {
     width: 21em;
@@ -290,18 +325,20 @@
   background-color: #e8e4e3;
   height: 140px;
   margin-bottom: 3%;
+  position: relative;
 }
 
 .price_download__color_line {
-  position: relative;
-  top: -9px;
+  position: absolute;
+  top: -5px;
   width: 100%;
 }
 
 .price_download__container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
+  height: 140px;
 }
 
 .price_download__text {
@@ -359,15 +396,33 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .price_download__container {
+    height: unset;
+  }
+
   .price_download__text {
     font-size: 4vw;
   }
 
   .price_download__button {
-    font-size: 3.5vw;
-    padding: 3%;
+    font-size: 3.3vw;
+    padding: 2% 5%;
     height: unset;
     width: unset;
+  }
+}
+@media screen and (max-width: 500px) {
+  .price_download__container {
+    padding: 0 2%;
+  }
+
+  .price_download__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .price_download__text {
+    font-size: 16px;
   }
 }
 .footer {
@@ -375,7 +430,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #393031;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .footer__left {
@@ -477,7 +532,7 @@
   left: -10%;
 }
 
-@media screen and (max-width: 1112px) {
+@media screen and (max-width: 1150px) {
   .footer {
     justify-content: center;
     padding: 0 5% 5% 5%;
@@ -523,11 +578,11 @@ body {
   width: 100%;
 }
 
-.header__image {
-  height: auto;
-  width: 100%;
+@media screen and (max-width: 855px) {
+  .header__media {
+    background: center/contain url("../img/contacts/header_img_mobile.jpg") no-repeat;
+  }
 }
-
 .contact_data {
   margin: 5% auto;
   width: 42em;
@@ -557,7 +612,7 @@ body {
 
 .map__img {
   height: auto;
-  width: 100%;
+  width: 72%;
 }
 
 .footer {

@@ -3,18 +3,20 @@
   background-color: #e8e4e3;
   height: 140px;
   margin-bottom: 3%;
+  position: relative;
 }
 
 .price_download__color_line {
-  position: relative;
-  top: -9px;
+  position: absolute;
+  top: -5px;
   width: 100%;
 }
 
 .price_download__container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
+  height: 140px;
 }
 
 .price_download__text {
@@ -67,14 +69,34 @@
 }
 
 @media screen and (max-width: 700px) {
+  .price_download__container {
+   height: unset;
+  }
+
   .price_download__text {
     font-size: 4vw;
   }
 
   .price_download__button {
-    font-size: 3.5vw;
-    padding: 3%;
+    font-size: 3.3vw;
+    padding: 2% 5%;
     height: unset;
     width: unset;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .price_download__container {
+    padding: 0 2%;
+  }
+
+  .price_download__text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .price_download__text {
+    font-size: 16px;
   }
 }

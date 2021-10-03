@@ -122,11 +122,46 @@
   text-decoration: none;
 }
 
+.header__media {
+  position: relative;
+}
+
+.header__text {
+  font-family: Roboto, sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  letter-spacing: 0;
+  position: absolute;
+  left: 20%;
+  bottom: 31%;
+}
+
 .header__image {
-  max-width: 1440px;
+  display: block;
+  height: auto;
   width: 100%;
 }
 
+@media screen and (max-width: 855px) {
+  .header__media {
+    position: relative;
+    top: -5px;
+    background: url("../img/contacts/header_img_mobile.jpg") no-repeat center;
+    background-size: contain;
+    font-size: 5.1vw;
+    height: 6.91em;
+    z-index: -1;
+  }
+
+  .header__image {
+    display: none;
+  }
+
+  .header__text {
+    color: white;
+    bottom: 15%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .logo__svg {
     width: 21em;
@@ -290,18 +325,20 @@
   background-color: #e8e4e3;
   height: 140px;
   margin-bottom: 3%;
+  position: relative;
 }
 
 .price_download__color_line {
-  position: relative;
-  top: -9px;
+  position: absolute;
+  top: -5px;
   width: 100%;
 }
 
 .price_download__container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
+  height: 140px;
 }
 
 .price_download__text {
@@ -359,15 +396,33 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .price_download__container {
+    height: unset;
+  }
+
   .price_download__text {
     font-size: 4vw;
   }
 
   .price_download__button {
-    font-size: 3.5vw;
-    padding: 3%;
+    font-size: 3.3vw;
+    padding: 2% 5%;
     height: unset;
     width: unset;
+  }
+}
+@media screen and (max-width: 500px) {
+  .price_download__container {
+    padding: 0 2%;
+  }
+
+  .price_download__text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .price_download__text {
+    font-size: 16px;
   }
 }
 .footer {
@@ -375,7 +430,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #393031;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .footer__left {
@@ -477,7 +532,7 @@
   left: -10%;
 }
 
-@media screen and (max-width: 1112px) {
+@media screen and (max-width: 1150px) {
   .footer {
     justify-content: center;
     padding: 0 5% 5% 5%;
@@ -523,6 +578,11 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 855px) {
+  .header__media {
+    background: center/contain url("../img/about/header_img_mobile.jpg") no-repeat;
+  }
+}
 .main__header {
   font-family: Roboto, sans-serif;
   font-size: 29px;
@@ -569,60 +629,6 @@ body {
   text-align: center;
   font-size: 30px;
   margin: 0 0 8% 0;
-}
-
-.price_download {
-  background-color: #e8e4e3;
-  height: 140px;
-  margin-bottom: 3%;
-}
-
-.price_downloads__color_line {
-  position: relative;
-  top: -5px;
-}
-
-.price_download__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 140px;
-}
-
-.price_downloads__text {
-  font-family: Roboto, sans-serif;
-  font-size: 29px;
-  font-weight: 400;
-  letter-spacing: -1px;
-  color: #3b6a60;
-  margin-right: 3%;
-}
-
-.price_download__button {
-  font-family: Roboto, sans-serif;
-  font-size: 23px;
-  font-weight: 600;
-  letter-spacing: 0;
-  background: #d67514;
-  background: linear-gradient(180deg, #d67514 50%, #b23a2c 100%);
-  border: none;
-  border-radius: 20px;
-  box-shadow: 1px 8px 12px grey;
-  color: white;
-  cursor: pointer;
-  height: 43%;
-  width: 24%;
-  transition: all ease-in 0.1s;
-}
-
-.price_download__button:hover {
-  transform: scale(1.02);
-  box-shadow: 3px 8px 8px grey;
-}
-
-.price_download__button:active {
-  transform: scale(0.98);
-  box-shadow: 3px 3px 3px grey;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -1,13 +1,10 @@
 @import "common";
 
 
-.header__media {
-
-}
-
-.header__image {
-  height: auto;
-  width: 100%;
+@media screen and (max-width: 855px) {
+  .header__media {
+    background: center/contain url("../img/contacts/header_img_mobile.jpg") no-repeat;
+  }
 }
 
 .contact_data {
@@ -38,7 +35,7 @@
 
 .map__img {
   height: auto;
-  width: 100%;
+  width: 72%;
 }
 
 .footer {

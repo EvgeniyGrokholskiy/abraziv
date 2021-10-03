@@ -128,9 +128,42 @@
   text-decoration: none;
 }
 
+.header__media {
+  position: relative;
+}
+
+.header__text {
+  @include fonts(29px, 400, 0);
+  position: absolute;
+  left: 20%;
+  bottom: 31%;
+}
+
 .header__image {
-  max-width: 1440px;
+  display: block;
+  height: auto;
   width: 100%;
+}
+
+@media screen and (max-width: 855px) {
+  .header__media {
+    position: relative;
+    top: -5px;
+    background: url("../img/contacts/header_img_mobile.jpg") no-repeat center;
+    background-size: contain;
+    font-size: 5.1vw;
+    height: 6.91em;
+    z-index: -1;
+  }
+
+  .header__image {
+    display: none;
+  }
+
+  .header__text {
+    color: $white_text;
+    bottom: 15%;
+  }
 }
 
 @media screen and (max-width: 1300px) {
