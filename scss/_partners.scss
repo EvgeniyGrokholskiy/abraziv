@@ -9,7 +9,28 @@
 }
 
 .partners__list {
-  background: blue;
-  height: 50px;
-  margin-bottom: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2% auto ;
+  width: 90%;
+}
+
+.partners__svg {
+
+  margin: 2% 1%;
+
+}
+
+@media screen and (max-width: 855px) {
+  .partners__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  .partners__text {
+    font-size: 14px;
+  }
 }
