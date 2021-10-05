@@ -52,18 +52,12 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 1200px) {
+  .card__img {
+    height: auto;
+    width: 23%;
+  }
+}
 
 @media screen and (max-width: 855px) {
   .header__media {
@@ -78,11 +72,35 @@
     font-size: 3.5vw;
   }
 
+  .price_download {
+    position: relative;
+    top: -1px;
+  }
+
   .price_download__color_line {
     display: none;
   }
-}
 
+  .description {
+    width: 90%;
+  }
+
+  .description__text {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card__header {
+    font-size: 18px;
+  }
+
+  .card__text {
+    font-size: 18px;
+  }
+}
 
 @media screen and (max-width: 600px){
   .header__media {
