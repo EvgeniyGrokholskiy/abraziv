@@ -72,7 +72,7 @@
   background-color: #148778;
   position: absolute;
   top: 0;
-  left: -30%;
+  left: -40%;
   transition: all ease-in 0.2s;
   height: 0;
   width: 120px;
@@ -90,9 +90,10 @@
   background: none;
   fill: #148778;
   position: absolute;
-  left: 120%;
+  left: 155%;
   top: 0;
   transition: all ease-in 0.2s;
+  z-index: 100;
 }
 
 .header__list_item-mobile {
@@ -129,7 +130,7 @@
 .header__sub_list_item {
   line-height: 1.2;
   margin-top: 15px;
-  text-align: start;
+  text-align: left;
   width: 100%;
 }
 
@@ -175,8 +176,9 @@
   font-weight: 400;
   letter-spacing: 0;
   position: absolute;
-  left: 20%;
   bottom: 31%;
+  left: 20%;
+  text-shadow: 2px 2px 2px gray;
 }
 
 .header__image {
@@ -185,26 +187,6 @@
   width: 100%;
 }
 
-@media screen and (max-width: 855px) {
-  .header__media {
-    position: relative;
-    top: -5px;
-    background: url("../img/contacts/header_img_mobile.jpg") no-repeat center;
-    background-size: contain;
-    font-size: 5.1vw;
-    height: 6.91em;
-    z-index: -1;
-  }
-
-  .header__image {
-    display: none;
-  }
-
-  .header__text {
-    color: white;
-    bottom: 15%;
-  }
-}
 @media screen and (max-width: 1300px) {
   .logo__svg {
     width: 21em;
@@ -242,6 +224,26 @@
 @media screen and (max-width: 900px) {
   .contact__mail_address, .contact__email {
     font-size: 1.8vw;
+  }
+}
+@media screen and (max-width: 855px) {
+  .header__media {
+    position: relative;
+    top: -5px;
+    background: url("../img/contacts/header_img_mobile.jpg") no-repeat center;
+    background-size: contain;
+    font-size: 5.1vw;
+    height: 6.91em;
+    z-index: -1;
+  }
+
+  .header__image {
+    display: none;
+  }
+
+  .header__text {
+    color: white;
+    bottom: 15%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -293,15 +295,19 @@
   .header__list_item {
     display: none;
   }
+
+  .header__text {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 530px) {
   .header__nav-arrow {
-    left: 76%;
+    left: 140%;
   }
 }
 @media screen and (max-width: 460px) {
   .header__nav-arrow {
-    left: 65%;
+    left: 122%;
   }
 }
 @media screen and (max-width: 410px) {
@@ -317,14 +323,14 @@
 @media screen and (max-width: 360px) {
   .header__nav-arrow {
     position: absolute;
-    left: 54%;
+    left: 95%;
     top: 0;
   }
 }
 @media screen and (max-width: 285px) {
   .header__nav-arrow {
     position: absolute;
-    left: 46%;
+    left: 81%;
     top: 0;
   }
 
