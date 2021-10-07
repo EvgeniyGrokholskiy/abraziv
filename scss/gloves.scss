@@ -1,0 +1,87 @@
+@import "common";
+
+.gloves_container {
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr;
+  margin: 7% auto;
+  width: 74%;
+}
+
+.gloves_card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 16%;
+  height: auto;
+  width: 100%;
+}
+
+.gloves__image {
+  height: auto;
+  width: 30%;
+}
+
+.gloves__text {
+  @include fonts(19px, 400, 0);
+  margin-left: 5%;
+  // margin-top: 6%;
+  width: 12em;
+}
+
+@media screen and (max-width: (1350px)) {
+  .gloves__text {
+    font-size: 1.8vw;
+    width: 11em;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .gloves_container {
+    padding-left: 5%;
+    width: 90%;
+  }
+
+  .gloves__text {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .gloves__text {
+    font-size: 2.3vw;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .gloves_container {
+    grid-template: 1fr/1fr;
+    padding-left: 0;
+  }
+
+  .gloves_card {
+    padding-left: 10%;
+  }
+
+  .gloves__text {
+    font-size: 4vw;
+    width: 10em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header__nav_wrapper {
+    background-color: gray;
+    display: block;
+    height: 10px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .gloves__text {
+    font-size: 4.6vw;
+  }
+}

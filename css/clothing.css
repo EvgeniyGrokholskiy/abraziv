@@ -664,67 +664,68 @@ body {
   width: 100%;
 }
 
-.respirators_container {
+.clothing_container {
   display: grid;
   grid-template: 1fr/1fr 1fr;
-  margin: 6% auto;
+  margin: 7% auto;
   width: 74%;
 }
 
-.respirator_card {
+.clothing_card {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 8%;
+  margin-bottom: 16%;
   height: auto;
   width: 100%;
 }
 
-.respirator__image {
+.clothing__image {
   height: auto;
-  width: 26%;
+  width: 30%;
 }
 
-.respirator__text {
+.clothing__text {
   font-family: Roboto, sans-serif;
   font-size: 19px;
   font-weight: 400;
   letter-spacing: 0;
   margin-left: 5%;
+  width: 12em;
 }
 
 @media screen and (max-width: 1350px) {
-  .respirator__text {
+  .clothing__text {
     font-size: 1.8vw;
     width: 11em;
   }
 }
 @media screen and (max-width: 1100px) {
-  .respirators_container {
+  .clothing_container {
     padding-left: 5%;
     width: 90%;
   }
 
-  .respirator__text {
+  .clothing__text {
     font-size: 2vw;
   }
 }
 @media screen and (max-width: 900px) {
-  .respirator__text {
+  .clothing__text {
     font-size: 2.3vw;
   }
 }
 @media screen and (max-width: 700px) {
-  .respirators_container {
+  .clothing_container {
     grid-template: 1fr/1fr;
     padding-left: 0;
   }
 
-  .respirator_card {
+  .clothing_card {
     padding-left: 10%;
   }
 
-  .respirator__text {
+  .clothing__text {
     font-size: 4vw;
     width: 10em;
   }
@@ -741,9 +742,9 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  .respirator__text {
+  .clothing__text {
     font-size: 4.6vw;
   }
 }
 
-/*# sourceMappingURL=respirators.css.map */
+/*# sourceMappingURL=clothing.css.map */

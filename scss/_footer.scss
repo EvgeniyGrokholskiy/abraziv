@@ -12,8 +12,8 @@
 }
 
 .footer__company_name {
+  @include fonts(21px);
   color: $white_text;
-  font-size: 21px;
   line-height: 1.5;
   width: 20em;
   margin-left: 4%;

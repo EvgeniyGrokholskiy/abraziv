@@ -499,8 +499,11 @@
 }
 
 .footer__company_name {
-  color: white;
+  font-family: Roboto, sans-serif;
   font-size: 21px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: white;
   line-height: 1.5;
   width: 20em;
   margin-left: 4%;
