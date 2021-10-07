@@ -616,7 +616,17 @@
     margin-right: 5%;
   }
 }
+@media screen and (max-width: 641px) {
+  .footer__contact_data, .footer__company_name, .footer__nav_menu-left, .footer__center {
+    margin-left: 0;
+  }
+}
 @media screen and (max-width: 565px) {
+  .footer {
+    justify-content: flex-start;
+    padding-left: 28%;
+  }
+
   .footer__center {
     margin-right: 6%;
   }
@@ -627,6 +637,18 @@
 
   .footer__item {
     margin-top: 5%;
+  }
+
+  .footer__contact_data {
+    font-size: 4vw;
+  }
+
+  .footer__company_name, .footer__link, .footer__contact, .footer__address {
+    font-size: 4vw;
+  }
+
+  .footer_svg {
+    width: 4vw;
   }
 }
 body {

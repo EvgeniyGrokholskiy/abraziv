@@ -1,0 +1,86 @@
+@import "common";
+
+.respirators_container {
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr;
+  margin: 6% auto;
+  width: 74%;
+}
+
+.respirator_card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8%;
+  height: auto;
+  width: 100%;
+}
+
+.respirator__image {
+  height: auto;
+  width: 26%;
+}
+
+.respirator__text {
+  @include fonts(19px, 400, 0);
+  margin-left: 5%;
+ // margin-top: 6%;
+}
+
+@media screen and (max-width: (1350px)) {
+  .respirator__text {
+    font-size: 1.8vw;
+    width: 11em;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .respirators_container {
+    padding-left: 5%;
+    width: 90%;
+  }
+
+  .respirator__text {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .respirator__text {
+    font-size: 2.3vw;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .respirators_container {
+    grid-template: 1fr/1fr;
+    padding-left: 0;
+  }
+
+  .respirator_card {
+    padding-left: 10%;
+  }
+
+  .respirator__text {
+    font-size: 4vw;
+    width: 10em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header__nav_wrapper {
+    background-color: gray;
+    display: block;
+    height: 10px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .respirator__text {
+    font-size: 4.6vw;
+  }
+}
