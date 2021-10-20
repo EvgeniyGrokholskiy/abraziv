@@ -12,7 +12,7 @@
 }
 
 .footer__company_name {
-  @include fonts(21px);
+  @include fonts(18px);
   color: $white_text;
   line-height: 1.5;
   width: 20em;
@@ -34,7 +34,7 @@
 }
 
 .footer__link {
-  @include fonts(20px, 400, 0);
+  @include fonts(18px, 400, 0);
   color: $white_text;
   text-decoration: none;
 }
@@ -58,13 +58,13 @@
 }
 
 .footer__address, .footer__contact {
-  @include fonts(20px, 400, 0);
+  @include fonts(18px, 400, 0);
   color: $white_text;
   //margin: 0;
 }
 
 .footer__contact {
-  margin: 12% 0 0 0;
+  margin: 9% 0 0 0;
 }
 
 .footer__address {
@@ -126,9 +126,27 @@
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .footer {
+    padding: 0 5% 1% 5%;
+  }
+}
+
 @media screen and (max-width: 641px) {
   .footer__contact_data, .footer__company_name, .footer__nav_menu-left, .footer__center {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__left,.footer__center {
+    display: none;
+  }
+  .footer__contact_data {
+    width: 14em;
+  }
+  .footer__right {
+    margin: 0 0 3% 11%;
   }
 }
 
@@ -150,14 +168,14 @@
   }
 
   .footer__contact_data {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .footer__company_name, .footer__link, .footer__contact, .footer__address {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .footer_svg {
-    width: 4vw;
+    width: 3.5vw;
   }
 }

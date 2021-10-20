@@ -175,7 +175,7 @@
 
 .header__link {
   font-family: Roboto, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: -1px;
   color: white;
@@ -194,7 +194,6 @@
   position: absolute;
   bottom: 31%;
   left: 20%;
-  text-shadow: 2px 2px 2px gray;
 }
 
 .header__image {
@@ -203,18 +202,19 @@
   width: 100%;
 }
 
+@media screen and (max-width: 1366px) {
+  .header__nav_wrapper {
+    padding-right: 9%;
+  }
+}
 @media screen and (max-width: 1300px) {
   .logo__svg {
     width: 21em;
     font-size: 1.2vw;
   }
 
-  .contacts {
-    margin: 0;
-  }
-
   .contact__mail_address, .contact__email {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
   }
 
   .contact__phone {
@@ -231,10 +231,26 @@
     font-size: 2.2vw;
   }
 }
+@media screen and (max-width: 1300px) {
+  .header__nav_wrapper {
+    padding-right: 8%;
+    padding-left: 30%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .header__nav_wrapper {
     justify-content: center;
     padding: 0 2% 0 7%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__nav_wrapper {
+    justify-content: center;
+    padding: 0 5% 0 30%;
+  }
+
+  .header__link {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -265,6 +281,14 @@
 @media screen and (max-width: 800px) {
   .header__link {
     font-size: 18px;
+  }
+
+  .contacts {
+    margin-left: 0;
+  }
+
+  .header__nav_wrapper {
+    padding: 0;
   }
 }
 @media screen and (max-width: 780px) {
@@ -314,6 +338,18 @@
 
   .header__text {
     font-size: 16px;
+  }
+
+  .contacts {
+    align-items: center;
+  }
+
+  .contact__phone_number {
+    font-size: 3.3vw;
+  }
+
+  .contact__phone {
+    width: 14em;
   }
 }
 @media screen and (max-width: 530px) {
@@ -388,6 +424,10 @@
   margin: 2% 1%;
 }
 
+.partners__svg-size {
+  width: 110px;
+}
+
 @media screen and (max-width: 855px) {
   .partners__text {
     font-size: 16px;
@@ -401,7 +441,7 @@
 .price_download {
   background-color: #e8e4e3;
   height: 140px;
-  margin-bottom: 3%;
+  margin-bottom: 7%;
   position: relative;
 }
 
@@ -423,7 +463,7 @@
   font-size: 29px;
   font-weight: 400;
   letter-spacing: -1px;
-  color: #3b6a60;
+  color: #00a890;
   margin-right: 3%;
 }
 
@@ -472,6 +512,16 @@
     margin: 3% 0 3% 0;
   }
 }
+@media screen and (max-width: 1024px) {
+  .price_download {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (max-width: 736px) {
+  .price_download__text {
+    font-size: 27px;
+  }
+}
 @media screen and (max-width: 700px) {
   .price_download__container {
     height: unset;
@@ -486,6 +536,11 @@
     padding: 2% 5%;
     height: unset;
     width: unset;
+  }
+}
+@media screen and (max-width: 667px) {
+  .price_download__text {
+    font-size: 3.6vw;
   }
 }
 @media screen and (max-width: 500px) {
@@ -516,7 +571,7 @@
 
 .footer__company_name {
   font-family: Roboto, sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: -1px;
   color: white;
@@ -541,7 +596,7 @@
 
 .footer__link {
   font-family: Roboto, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 0;
   color: white;
@@ -568,14 +623,14 @@
 
 .footer__address, .footer__contact {
   font-family: Roboto, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 0;
   color: white;
 }
 
 .footer__contact {
-  margin: 12% 0 0 0;
+  margin: 9% 0 0 0;
 }
 
 .footer__address {
@@ -635,9 +690,27 @@
     margin-right: 5%;
   }
 }
+@media screen and (max-width: 1150px) {
+  .footer {
+    padding: 0 5% 1% 5%;
+  }
+}
 @media screen and (max-width: 641px) {
   .footer__contact_data, .footer__company_name, .footer__nav_menu-left, .footer__center {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__left, .footer__center {
+    display: none;
+  }
+
+  .footer__contact_data {
+    width: 14em;
+  }
+
+  .footer__right {
+    margin: 0 0 3% 11%;
   }
 }
 @media screen and (max-width: 565px) {
@@ -659,19 +732,20 @@
   }
 
   .footer__contact_data {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .footer__company_name, .footer__link, .footer__contact, .footer__address {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .footer_svg {
-    width: 4vw;
+    width: 3.5vw;
   }
 }
 body {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .wrapper {
@@ -698,7 +772,7 @@ body {
 
 .respirator__image {
   height: auto;
-  width: 26%;
+  width: 30%;
 }
 
 .respirator__text {

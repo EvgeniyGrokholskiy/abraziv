@@ -2,7 +2,7 @@
 .price_download {
   background-color: #e8e4e3;
   height: 140px;
-  margin-bottom: 3%;
+  margin-bottom: 7%;
   position: relative;
 }
 
@@ -68,6 +68,18 @@
   }
 }
 
+@media  screen and(max-width: 1024px) {
+  .price_download {
+    margin-bottom: 8%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .price_download__text {
+    font-size: 27px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .price_download__container {
    height: unset;
@@ -82,6 +94,12 @@
     padding: 2% 5%;
     height: unset;
     width: unset;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .price_download__text {
+    font-size: 3.6vw;
   }
 }
 

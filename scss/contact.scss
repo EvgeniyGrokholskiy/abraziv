@@ -9,12 +9,16 @@
 
 .contact_data {
   margin: 5% auto;
-  width: 42em;
+  width: 47em;
 }
 
 .contact_data__text {
   @include fonts(23px);
   margin: 0;
+}
+
+.contact_data__text-margin {
+  margin: 3% 0;
 }
 
 .contact_data__link {
