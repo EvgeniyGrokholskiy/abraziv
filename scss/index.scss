@@ -21,7 +21,7 @@
   bottom: 6%;
   text-shadow: 4px 4px 4px black;
   transform: translateX(-50%);
-  width: 26em;
+  width: 25em;
   z-index: 1;
 }
 
@@ -49,31 +49,25 @@
     bottom: 5%;
     font-size: 27px;
     text-align: center;
-    width: 25em;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .slider__text {
-    bottom: 5%;
     font-size: 22px;
-    text-align: center;
-    width: 28em;
+    width: 39em;
   }
 }
 
 @media screen and (max-width: 800px) {
   .slider__text {
-    bottom: 5%;
     font-size: 2vw;
-    text-align: center;
-    width: 30em;
   }
 }
 
 @media screen and (max-width: 600px) {
   .slider__text {
-    width: 32em;
+    font-size: 2.5vw;
   }
 }
 
@@ -421,8 +415,14 @@
   }
 
   .benefits__text {
-    font-size: 15px;
+    font-size: 17px;
     margin: 1% 0 1% 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits__block {
+    padding-left: 2%;
   }
 }
 
@@ -469,6 +469,13 @@
 @media screen and (max-width: 800px) {
   .cooperate {
     width: 37em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cooperate {
+    width: 26em;
+    font-size: 3.5vw;
   }
 }
 
@@ -579,6 +586,17 @@
     left: 10%;
     text-align: center;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    margin-top: 22%
+  }
+  .banner__text {
+    font-size: 3.5vw;
+    left: 5%;
+    width: 90%;
   }
 }
 
@@ -701,5 +719,29 @@
 @media screen and (max-width: 800px) {
   .steps__text {
     margin-top: 1%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partners__text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .steps__header {
+    font-size: 18px;
+  }
+
+  .steps__text {
+    font-size: 16px;
+  }
+
+  .partners__text {
+    font-size: 18px;
+  }
+
+  .footer__contact,.footer__address,.footer__link {
+    font-size: 14px;
   }
 }

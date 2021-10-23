@@ -1,6 +1,8 @@
 (function renderHeader() {
-    let header = document.querySelector("header");
-    header.innerHTML = `
+
+    const rootDomElement = document.querySelector("header");
+
+    rootDomElement.innerHTML = `  
     
      <div class="header">
             <div class="logo">
@@ -73,6 +75,8 @@
             </ul>
         </nav>      
     `;
+    window.scroll(0,0);
 })();
-window.scroll(top);
+
+
 

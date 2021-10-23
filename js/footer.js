@@ -1,6 +1,9 @@
 (function renderFooter() {
-    let footer = document.querySelector('footer');
-    footer.innerHTML = `
+    
+    const rootDomElement = document.querySelector('footer');
+
+    rootDomElement.innerHTML = `
+
         <div class="footer">
             <div class="footer__left">
                 <p class="footer__company_name">Общество с ограниченной<br> ответственностью<br>«МК АБРАЗИВ»</p>

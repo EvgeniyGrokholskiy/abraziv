@@ -1,29 +1,24 @@
 @import "common";
 
 
-@media screen and (max-width: 855px) {
-  .header__media {
-    background: center/contain url("../img/delivery/header_img_mobile.jpg") no-repeat;
-  }
-}
 
 .delivery {
-  padding-left: 2%;
   margin: 5% auto 20% auto;
-  width: 56.9em;
+  width: 73%;
 }
 
 .delivery__text {
-  @include fonts(24px);
-  margin: 0 0 1% 1%;
+  @include fonts(24px,400,0);
+  margin: 1% 0;
+  text-align: justify;
 }
 
 .delivery__header {
-  margin: 5% 0 6% 1%;
+  margin: 5% 0 7% 0;
 }
 
 .delivery__business_hours {
-  margin: 5% 0 1% 1%;
+  margin: 5% 0 1% 0;
 }
 
 .delivery_image {
@@ -48,5 +43,34 @@
   }
   .delivery__text {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .header__media {
+    background: center/contain url("../img/delivery/header_img_mobile.jpg") no-repeat;
+  }
+  .header__text {
+    bottom: 17%;
+    font-size: 3vw;
+    font-weight: 700;
+    left: 21%;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__text {
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__text {
+    font-size: 16px;
+  }
+
+  .delivery__text {
+    text-align: start;
   }
 }

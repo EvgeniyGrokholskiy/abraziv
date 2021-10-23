@@ -1,5 +1,10 @@
 @import "common";
 
+.header__text {
+  left: 19%;
+  text-align: center;
+}
+
 @media screen and (max-width: 855px) {
   .header__media {
     background: center/contain url("../img/production/means_of_protection/header_img_mobile.jpg") no-repeat;
@@ -7,6 +12,9 @@
 
   .header__text {
     bottom: 5%;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
   }
 }
 
@@ -68,13 +76,17 @@
 
 @media screen and (max-width: 855px) {
   .header__media {
-    height: 6.81em;
+    height: 7.01em;
     top: -2px;
   }
 
   .header__text {
     font-size: 3.5vw;
     bottom: 5%;
+  }
+
+  .price_download__color_line {
+    top: -6px;
   }
 }
 

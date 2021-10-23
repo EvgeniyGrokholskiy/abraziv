@@ -143,10 +143,10 @@
     display: none;
   }
   .footer__contact_data {
-    width: 14em;
+    width: 16em;
   }
   .footer__right {
-    margin: 0 0 3% 11%;
+    margin: 0 0 8% 11%;
   }
 }
 
@@ -177,5 +177,11 @@
 
   .footer_svg {
     width: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-left: 29%;
   }
 }

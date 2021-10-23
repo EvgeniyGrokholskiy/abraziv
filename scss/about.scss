@@ -3,9 +3,30 @@
 @media screen and (max-width: 855px) {
   .header__media {
     background: center/contain url("../img/about/header_img_mobile.jpg") no-repeat;
+    height: 7.11em;
+  }
+
+  .header__text {
+    bottom: 5%;
+    font-size: 3vw;
+    font-weight: 700;
+    left: 21%;
+    text-shadow: 2px 2px 2px black;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .header__text {
+    bottom: 2%;
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__text {
+    font-size: 16px;
+  }
+}
 
 .main__container {
 
@@ -20,9 +41,11 @@
 }
 
 .main__text {
-  @include fonts(22px);
+  @include fonts(22px,400,0);
   color: black;
-  margin: 0 0 0 11%;
+  margin: 0 auto;
+  text-align: justify;
+  width: 79%;
 }
 
 .spacer {
@@ -51,6 +74,78 @@
 .main__storage {
   text-align: center;
   font-size: 30px;
-  margin: 0 0 8% 0;
+  margin: 0 auto 8% auto;
   color: $main_text;
+}
+
+@media screen and (max-width: 1440px) {
+  .main__text {
+    font-size: 1.53vw;
+  }
+
+  .main__svg {
+    font-size: 1.11vw;
+    height: auto;
+    width: 9em;
+  }
+
+  .main__storage {
+    font-size: 2.08vw;
+  }
+
+}
+
+@media screen and (max-width: 1180px) {
+  .main__text {
+    font-size: 18px;
+  }
+
+  .main__storage {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main__header {
+    font-size: 3.6vw;
+  }
+
+  .main__svg {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main__header {
+    font-size: 16px;
+  }
+
+  .main__text {
+    font-size: 15px;
+  }
+
+  .main__svg {
+    font-size: 1.8vw;
+  }
+
+  .main__storage {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .main__header {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 11%;
+  }
+
+  .main__text {
+    font-size: 14px;
+    text-align: start;
+  }
+
+  .main__storage {
+    text-align: center;
+  }
 }

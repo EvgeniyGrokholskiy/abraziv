@@ -7,7 +7,7 @@
 }
 
 .header__text {
-  left: 14%;
+  left: 16%;
   bottom: 31%;
   text-align: center;
 }
@@ -63,7 +63,7 @@
 
 @media screen and (max-width: 1100px) {
   .header__text {
-    font-size: 2.63vw;
+    font-size: 2.33vw;
   }
 
   .related__image {
@@ -80,8 +80,11 @@
   }
 
   .header__text {
-    font-size: 3.5vw;
+    font-size: 3vw;
+    font-weight: 700;
     bottom: 5%;
+    text-shadow: 2px 2px 2px black;
+
   }
 }
 

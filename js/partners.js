@@ -1,6 +1,8 @@
 (function partners () {
-    const root = document.querySelector('.partners');
-    root.innerHTML = `
+    
+    const rootDomElement = document.querySelector('.partners');
+
+    rootDomElement.innerHTML = `
             <p class="partners__text">НАШИ ПАРТНЕРЫ</p>
             <div class="partners__list">
                 <img class="partners__svg" src="./img/partners/luga.svg" alt="" loading="lazy">
@@ -17,4 +19,4 @@
                 <img class="partners__svg" src="./img/partners/start.svg" alt="" loading="lazy">
             </div>
     `
-})()
+})();
