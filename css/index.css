@@ -1235,15 +1235,9 @@ body {
   width: 13em;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1350px) {
   .banner__text {
-    left: 16%;
-  }
-}
-@media screen and (max-width: 1250px) {
-  .banner__text {
-    left: 20%;
-    font-size: 27px;
+    left: 14%;
   }
 }
 @media screen and (max-width: 1250px) {
@@ -1253,7 +1247,6 @@ body {
 }
 @media screen and (max-width: 1180px) {
   .banner__text {
-    left: 22%;
     font-size: 22px;
   }
 }
@@ -1265,7 +1258,6 @@ body {
 
   .banner__text {
     font-size: 20px;
-    left: 22%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -1430,10 +1422,6 @@ body {
 
   .steps__text {
     font-size: 18px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .steps__text {
     margin-top: 1%;
   }
 }
