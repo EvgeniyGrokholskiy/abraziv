@@ -5,6 +5,10 @@
 @import "price_download";
 @import "footer";
 
+html {
+  touch-action: manipulation;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;

@@ -2,9 +2,11 @@
 
 .clothing_container {
   display: grid;
+  grid-column-gap: 5%;
   grid-template: 1fr/ 1fr 1fr;
+  padding-left: 80px;
   margin: 5% auto;
-  width: 74%;
+  width: 80%;
 }
 
 .clothing_card {
@@ -25,13 +27,13 @@
   @include fonts(19px, 400, 0);
   margin-left: 5%;
   // margin-top: 6%;
-  width: 12em;
+  width: 18em;
 }
 
 @media screen and (max-width: (1350px)) {
   .clothing__text {
-    font-size: 1.8vw;
-    width: 11em;
+    font-size: 1.5vw;
+    width: 17em;
   }
 }
 
@@ -42,13 +44,15 @@
   }
 
   .clothing__text {
-    font-size: 2vw;
+    font-size: 1.8vw;
+    width: 16em;
   }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 850px){
   .clothing__text {
-    font-size: 2.3vw;
+    font-size: 2.2vw;
+    width: 12em;
   }
 }
 
@@ -63,8 +67,8 @@
   }
 
   .clothing__text {
-    font-size: 4vw;
-    width: 10em;
+    font-size: 3vw;
+    width: 14em;
   }
 }
 
@@ -82,6 +86,6 @@
 
 @media screen and (max-width: 500px){
   .clothing__text {
-    font-size: 4.6vw;
+    font-size: 4.3vw;
   }
 }

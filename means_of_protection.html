@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/means_of_protection.css" as="style">
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
 <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+    <meta name="description" content="Put your description here.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <link rel="stylesheet" href="./css/means_of_protection.css">
     <title>Средства защиты</title>
 </head>
@@ -57,11 +64,13 @@
             </div>
             <nav class="header__nav_wrapper">
                 <ul class="header__nav-mobile">
-                    <svg class="header__nav-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" fill="black" style="">
-                        <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)" fill="" stroke="">
-                            <path d="M275 670 l-39 -40 114 -115 115 -115 -115 -115 -115 -115 43 -42 42 -43 157 158 158 157 -155 155 c-85 85 -157 155 -160 155 -3 0 -24 -18 -45 -40z"/>
-                        </g>
-                    </svg>
+                    <li class="header__list_button">
+                        <svg class="header__nav-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" fill="black" style="">
+                            <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)" fill="" stroke="">
+                                <path d="M275 670 l-39 -40 114 -115 115 -115 -115 -115 -115 -115 43 -42 42 -43 157 158 158 157 -155 155 c-85 85 -157 155 -160 155 -3 0 -24 -18 -45 -40z"/>
+                            </g>
+                        </svg>
+                    </li>
                     <li class="header__list_item-mobile"><a href="index.html" class="header__link">Главная</a></li>
                     <li class="header__list_item-mobile"><a href="about.html" class="header__link">О компании</a></li>
                     <!--<li class="header__list_item-mobile have_a_submenu-mobile"><a href="index.html#prod" class="header__link">Продукция</a></li>-->
@@ -76,12 +85,13 @@
                 <ul class="header__nav">
                     <li class="header__list_item"><a href="index.html" class="header__link">Главная</a></li>
                     <li class="header__list_item"><a href="about.html" class="header__link">О компании</a></li>
-                    <li class="header__list_item have_a_submenu"><span class="header__link">Продукция</span></li>
-                    <ul class="header__nav_production ">
-                        <li class="header__list_item header__sub_list_item"><a href="abrasives.html" class="header__link">Абразивы</a></li>
-                        <li class="header__list_item header__sub_list_item"><a href="#" class="header__link">Средства защиты</a></li>
-                        <li class="header__list_item header__sub_list_item"><a href="related_products.html" class="header__link">Сопутствующая продукция</a></li>
-                    </ul>
+                    <li class="header__list_item have_a_submenu"><span class="header__link">Продукция</span>
+                        <ul class="header__nav_production ">
+                            <li class="header__list_item header__sub_list_item"><a href="abrasives.html" class="header__link">Абразивы</a></li>
+                            <li class="header__list_item header__sub_list_item"><a href="#" class="header__link">Средства защиты</a></li>
+                            <li class="header__list_item header__sub_list_item"><a href="related_products.html" class="header__link">Сопутствующая продукция</a></li>
+                        </ul>
+                    </li>
                     <li class="header__list_item"><a href="delivery.html" class="header__link">Доставка</a></li>
                     <li class="header__list_item"><a href="contact.html" class="header__link">Контакты</a></li>
                 </ul>
@@ -97,7 +107,7 @@
             <div class="price_download">
                 <svg class="price_download__color_line" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1440" height="9" style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd" viewBox="0 0 1439.63 9"><defs><style>.fil1{fill:#59b99d}.fil2{fill:#a1d5cc}</style></defs><g id="Layer_x0020_1"><g id="_2572756013824"><path style="fill:#148778" d="M0 0h1439.63v9H0z"/><path class="fil1" d="M1014.4 0h297.79v9H1014.4zM150.6 0h457.63v9H150.6z"/><path class="fil2" d="M150.6 0h151.14v9H150.6zM674.65 0h435.22v9H674.65z"/></g></g></svg>
                 <div class="price_download__container">
-                    <p class="price_download__text">Вся продукция в наличии на складе в Челябинске!</p>
+                    <p class="price_download__text" aria-label="скачать прайс">Вся продукция в наличии на складе в Челябинске!</p>
                     <button class="price_download__button">СКАЧАЙТЬ ПРАЙС-ЛИСТ</button>
                 </div>
             </div>
@@ -105,22 +115,22 @@
             <div class="protection">
                 <img src="./img/production/means_of_protection/mask.jpg" alt="" class="protection__image" height="161" width="248">
                 <p class="protection__text">Средства защиты органов дыхания:</p>
-                <a href="respirators.html" class="protection__link"></a>
+                <a href="respirators.html" class="protection__link" aria-label="переход на страницу средства защиты органов дыхания"></a>
             </div>
             <div class="protection">
                 <img src="./img/production/means_of_protection/gloves.jpg" alt="" class="protection__image" height="193" width="248">
                 <p class="protection__text">Средства защиты рук:</p>
-                <a href="gloves.html" class="protection__link"></a>
+                <a href="gloves.html" class="protection__link" aria-label="переход на страницу средства защиты рук"></a>
             </div>
             <div class="protection protection-margin">
                 <img src="./img/production/means_of_protection/glasses.jpg" alt="" class="protection__image" height="130" width="248">
                 <p class="protection__text">Средства защиты глаз:</p>
-                <a href="glasses.html" class="protection__link"></a>
+                <a href="glasses.html" class="protection__link" aria-label="переход на страницу средства защиты глаз"></a>
             </div>
             <div class="protection protection-big_img">
                 <img src="./img/production/means_of_protection/other.jpg" alt="" class="protection__image protection__image-big_img" height="165" width="138">
                 <p class="protection__text partners__text-big_img">Другие средства защиты:</p>
-                <a href="clothing.html" class="protection__link"></a>
+                <a href="clothing.html" class="protection__link" aria-label="переход на страницу другие средства защиты"></a>
             </div>
 
 

@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0">
+          content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="./css/delivery.css" as="style">
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
 <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
 <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+    <meta name="description" content="Put your description here.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
     <link rel="stylesheet" href="./css/delivery.css">
     <title>Доставка</title>
 </head>
@@ -69,11 +76,13 @@
         </div>
         <nav class="header__nav_wrapper">
             <ul class="header__nav-mobile">
-                <svg class="header__nav-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" fill="black" style="">
-                    <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)" fill="" stroke="">
-                        <path d="M275 670 l-39 -40 114 -115 115 -115 -115 -115 -115 -115 43 -42 42 -43 157 158 158 157 -155 155 c-85 85 -157 155 -160 155 -3 0 -24 -18 -45 -40z"/>
-                    </g>
-                </svg>
+                <li class="header__list_button">
+                    <svg class="header__nav-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 80 80" preserveAspectRatio="xMidYMid meet" fill="black" style="">
+                        <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)" fill="" stroke="">
+                            <path d="M275 670 l-39 -40 114 -115 115 -115 -115 -115 -115 -115 43 -42 42 -43 157 158 158 157 -155 155 c-85 85 -157 155 -160 155 -3 0 -24 -18 -45 -40z"/>
+                        </g>
+                    </svg>
+                </li>
                 <li class="header__list_item-mobile"><a href="index.html" class="header__link">Главная</a></li>
                 <li class="header__list_item-mobile"><a href="about.html" class="header__link">О компании</a></li>
                 <!--<li class="header__list_item-mobile have_a_submenu-mobile"><a href="index.html#prod" class="header__link">Продукция</a></li>-->
@@ -83,17 +92,18 @@
                 <li class="header__list_item-mobile"><a href="related_products.html" class="header__link">Сопутствующая продукция</a></li>
 
                 <li class="header__list_item-mobile"><a href="#" class="header__link">Доставка</a></li>
-                <li class="header__list_item-mobile"><a href="contact.html" class="header__link">Контакты</a></li>
+                <li class="header__list_item-mobile"><span class="header__link">Продукция</span>
             </ul>
             <ul class="header__nav">
                 <li class="header__list_item"><a href="index.html" class="header__link">Главная</a></li>
                 <li class="header__list_item"><a href="about.html" class="header__link">О компании</a></li>
-                <li class="header__list_item have_a_submenu"><span class="header__link">Продукция</span></li>
-                <ul class="header__nav_production ">
-                    <li class="header__list_item header__sub_list_item"><a href="abrasives.html" class="header__link">Абразивы</a></li>
-                    <li class="header__list_item header__sub_list_item"><a href="means_of_protection.html" class="header__link">Средства защиты</a></li>
-                    <li class="header__list_item header__sub_list_item"><a href="related_products.html" class="header__link">Сопутствующая продукция</a></li>
-                </ul>
+                <li class="header__list_item have_a_submenu"><a href="index.html#prod" class="header__link">Продукция</a>
+                    <ul class="header__nav_production ">
+                        <li class="header__list_item header__sub_list_item"><a href="abrasives.html" class="header__link">Абразивы</a></li>
+                        <li class="header__list_item header__sub_list_item"><a href="means_of_protection.html" class="header__link">Средства защиты</a></li>
+                        <li class="header__list_item header__sub_list_item"><a href="related_products.html" class="header__link">Сопутствующая продукция</a></li>
+                    </ul>
+                </li>
                 <li class="header__list_item"><a href="#" class="header__link">Доставка</a></li>
                 <li class="header__list_item"><a href="contact.html" class="header__link">Контакты</a></li>
             </ul>

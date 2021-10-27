@@ -95,6 +95,10 @@
   z-index: 2;
 }
 
+.header__list_button {
+  list-style: none;
+}
+
 .show {
   display: block;
   left: 2%;
@@ -165,7 +169,7 @@
   z-index: 1;
 }
 
-.have_a_submenu:hover + .header__nav_production {
+.have_a_submenu:hover > .header__nav_production {
   display: block;
 }
 
@@ -179,6 +183,7 @@
   font-weight: 400;
   letter-spacing: -1px;
   color: white;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -717,6 +722,10 @@
     padding-left: 29%;
   }
 }
+html {
+  touch-action: manipulation;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -730,9 +739,11 @@ body {
 
 .glasses_container {
   display: grid;
+  grid-column-gap: 5%;
   grid-template: 1fr/1fr 1fr;
+  padding-left: 80px;
   margin: 7% auto;
-  width: 74%;
+  width: 80%;
 }
 
 .glasses_card {

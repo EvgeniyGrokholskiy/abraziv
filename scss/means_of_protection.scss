@@ -71,7 +71,22 @@
 
 .protection:hover {
   transform: scale(1.01);
-  box-shadow: 6px 6px 8px gray;
+  box-shadow: 0 0 20px gray;
+}
+
+.protection:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 10px gray;
+}
+
+@media screen and (max-width: 1024px) {
+  .protection {
+    box-sizing: border-box;
+    box-shadow: 0 0 10px grey;
+    height: 14.8em;
+    padding: 0 4%;
+    margin: 30px auto;
+  }
 }
 
 @media screen and (max-width: 855px) {
@@ -101,8 +116,9 @@
   }
 
   .protection {
+
     font-size: 2.66vw;
-    height: 18.8em;
+
   }
 
   .protection__image {
@@ -110,6 +126,6 @@
   }
 
   .protection__text {
-    font-size: 20px;
+    font-size: calc(2vw + 1vh + 3px);
   }
 }

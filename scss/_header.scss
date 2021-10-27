@@ -85,6 +85,10 @@
   z-index: 2;
 }
 
+.header__list_button {
+  list-style: none;
+}
+
 .show {
   display: block;
   left: 2%;
@@ -155,7 +159,7 @@
   z-index: 1;
 }
 
-.have_a_submenu:hover + .header__nav_production {
+.have_a_submenu:hover > .header__nav_production {
   display: block;
 }
 
@@ -166,6 +170,7 @@
 .header__link {
   @include fonts(20px);
   color: $white_text;
+  cursor: pointer;
   text-decoration: none;
 }
 
