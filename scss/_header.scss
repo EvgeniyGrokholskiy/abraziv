@@ -66,6 +66,22 @@
   margin-left: 4%;
 }
 
+.cover {
+  background-color: rgba(0, 0, 0, 0.48);
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in 5s;
+  z-index: 1;
+}
+
+.cover-on {
+  display: block;
+}
+
 .header__nav_wrapper {
   background-color: $nav_background;
   display: flex;
@@ -144,9 +160,6 @@
   width: 100%;
 }
 
-.header__link:hover {
-  color: gray;
-}
 
 .header__nav_production {
   background-color: $nav_background;
@@ -172,6 +185,20 @@
   color: $white_text;
   cursor: pointer;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: gray;
+}
+
+.header__link-mobile:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.header__link-current {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .header__media {
