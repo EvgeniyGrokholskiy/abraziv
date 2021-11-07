@@ -14,13 +14,13 @@ function classToggle () {
     cover.classList.toggle('cover-on');
 
     if (menuUlContainer.classList.contains('show')) {
-        setTimeout(() => {
-            menuItemsNodeList.forEach((element) => {
+        setTimeout(function () {
+            menuItemsNodeList.forEach(function(element) {
                 element.classList.add('on');
             })
         }, 200)
     } else {
-        menuItemsNodeList.forEach(((element) => {
+        menuItemsNodeList.forEach((function (element) {
             element.classList.remove('on');
         }))
     }

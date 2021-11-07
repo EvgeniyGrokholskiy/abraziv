@@ -32,8 +32,12 @@
   border: none;
   border-radius: 20px;
   box-shadow: 1px 8px 12px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $white_text;
   cursor: pointer;
+  text-decoration: none;
   transition: all ease-in 0.1s;
   height: 60px;
   width: 345px;

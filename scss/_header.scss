@@ -69,10 +69,10 @@
 .cover {
   background-color: rgba(0, 0, 0, 0.48);
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -200px;
   left: 0;
   transition: all ease-in 5s;
   z-index: 1;

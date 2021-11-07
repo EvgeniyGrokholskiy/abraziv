@@ -79,10 +79,10 @@
 .cover {
   background-color: rgba(0, 0, 0, 0.48);
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -200px;
   left: 0;
   transition: all ease-in 5s;
   z-index: 1;
@@ -478,8 +478,12 @@
   border: none;
   border-radius: 20px;
   box-shadow: 1px 8px 12px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   cursor: pointer;
+  text-decoration: none;
   transition: all ease-in 0.1s;
   height: 60px;
   width: 345px;
